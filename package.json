@@ -5,6 +5,9 @@
   "repository": "git@github.com:jumpman30/sdk-auto-update.git",
   "author": "Francisco Pereira <1200922@isep.ipp.pt>",
   "license": "MIT",
+  "bin": {
+    "sdk-auto-update": "./index.js"
+  },
   "scripts": {
     "start": "node index.js"
   }
