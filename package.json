@@ -1,0 +1,11 @@
+{
+  "name": "sdk-auto-update",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jumpman30/sdk-auto-update.git",
+  "author": "Francisco Pereira <1200922@isep.ipp.pt>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
