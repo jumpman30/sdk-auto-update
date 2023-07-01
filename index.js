@@ -49,10 +49,11 @@ fs.readFile('./package.json', async (err, data) => {
 
     let outdatedPackages = [];
     for (const dependency of dependencies) {
-        await checkForUpdate(dependency) ? outdatedPackages.push(dependencies) : undefined;
+        await checkForUpdate(dependency) ? outdatedPackages.push(dependency) : undefined;
     }
 
     Promise.all(outdatedPackages.map(updatePackage)).then(() => {
+        exec(`yarn install`);
         console.log('Finished updating all packages.');
     });
 
